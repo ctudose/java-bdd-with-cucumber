@@ -1,9 +1,0 @@
-com\luxoft\junit5\bank\Customer.class
-com\luxoft\junit5\bonus\Bonus.class
-com\luxoft\junit5\bank\BusinessCreditOffer.class
-com\luxoft\junit5\database\Database.class
-com\luxoft\junit5\bank\EconomyCreditOffer.class
-com\luxoft\junit5\bank\PremiumCreditOffer.class
-com\luxoft\junit5\database\Credentials.class
-com\luxoft\junit5\bank\Bank.class
-com\luxoft\junit5\bank\CreditOffer.class
