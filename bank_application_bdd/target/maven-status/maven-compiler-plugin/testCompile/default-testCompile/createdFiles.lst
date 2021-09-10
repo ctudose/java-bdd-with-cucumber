@@ -1,0 +1,14 @@
+com\luxoft\junit5\bank\BankTest$PremiumCreditOfferTest$VipCustomer.class
+com\luxoft\junit5\bank\BankTest$EconomyCreditOfferTest$VipCustomer.class
+com\luxoft\junit5\bank\BankTest$PremiumCreditOfferTest$UsualCustomer.class
+com\luxoft\junit5\database\DatabaseAccessTest.class
+com\luxoft\junit5\bank\BankTest$BusinessCreditOfferTest.class
+com\luxoft\junit5\bank\BankTest$EconomyCreditOfferTest.class
+com\luxoft\junit5\bank\BankTest.class
+com\luxoft\junit5\MockitoExtension.class
+com\luxoft\junit5\bonus\CreditOfferArgumentConverter.class
+com\luxoft\junit5\bank\BankTest$PremiumCreditOfferTest.class
+com\luxoft\junit5\bonus\BonusTest.class
+com\luxoft\junit5\bank\BankTest$BusinessCreditOfferTest$VipCustomer.class
+com\luxoft\junit5\bank\BankTest$BusinessCreditOfferTest$UsualCustomer.class
+com\luxoft\junit5\bank\BankTest$EconomyCreditOfferTest$UsualCustomer.class

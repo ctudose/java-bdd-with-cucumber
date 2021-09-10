@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.luxoft.junit5.bank.BankTest
+-------------------------------------------------------------------------------
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.266 sec - in com.luxoft.junit5.bank.BankTest

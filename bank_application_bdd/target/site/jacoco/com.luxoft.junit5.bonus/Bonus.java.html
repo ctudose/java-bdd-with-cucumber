@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Bonus.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">BankApplication</a> &gt; <a href="index.source.html" class="el_package">com.luxoft.junit5.bonus</a> &gt; <span class="el_source">Bonus.java</span></div><h1>Bonus.java</h1><pre class="source lang-java linenums">package com.luxoft.junit5.bonus;
+
+import com.luxoft.junit5.bank.Customer;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
+<span class="fc" id="L9">public class Bonus {</span>
+
+
+    public static final int VIP_FACTOR = 10;
+    public static final int USUAL_FACTOR = 20;
+
+<span class="fc" id="L15">    private Map&lt;Customer, Integer&gt; customersAmountMap = new HashMap&lt;&gt;();</span>
+<span class="fc" id="L16">    private Map&lt;Customer, Integer&gt; customersPointsMap = new HashMap&lt;&gt;();</span>
+
+    public Map&lt;Customer, Integer&gt; getCustomersPointsMap() {
+<span class="fc" id="L19">        return Collections.unmodifiableMap(customersPointsMap);</span>
+    }
+
+    public void addAmount(Customer customer, int amount) {
+<span class="fc bfc" id="L23" title="All 2 branches covered.">        if (customersAmountMap.containsKey(customer)) {</span>
+<span class="fc" id="L24">            customersAmountMap.put(customer, customersAmountMap.get(customer) + amount);</span>
+        } else {
+<span class="fc" id="L26">            customersAmountMap.put(customer, amount);</span>
+        }
+<span class="fc" id="L28">    }</span>
+
+    public void calculateGivenPoints() {
+<span class="fc bfc" id="L31" title="All 2 branches covered.">        for (Customer customer : customersAmountMap.keySet()) {</span>
+<span class="fc bfc" id="L32" title="All 2 branches covered.">            if (customer.isVip()) {</span>
+<span class="fc" id="L33">                customersPointsMap.put(customer, customersAmountMap.get(customer)/ VIP_FACTOR);</span>
+            } else {
+<span class="fc" id="L35">                customersPointsMap.put(customer, customersAmountMap.get(customer)/ USUAL_FACTOR);</span>
+            }
+<span class="fc" id="L37">        }</span>
+<span class="fc" id="L38">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

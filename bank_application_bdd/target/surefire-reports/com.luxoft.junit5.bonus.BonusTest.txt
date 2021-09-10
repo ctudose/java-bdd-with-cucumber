@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.luxoft.junit5.bonus.BonusTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.125 sec - in com.luxoft.junit5.bonus.BonusTest
